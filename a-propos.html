@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos — Boussole</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <div class="logo-icon">🧭</div>
+    <span>Boussole</span>
+  </a>
+  <div class="navbar-links" id="navLinks">
+    <a href="index.html">Accueil</a>
+    <a href="fonctionnalites.html">Fonctionnalités</a>
+    <a href="a-propos.html" class="active">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9)">Notre histoire</span>
+  <h1>Né d'une expérience vécue</h1>
+  <p>Boussole a été créé par des immigrants pour des immigrants — parce que naviguer la bureaucratie française dans une langue étrangère ne devrait pas être un obstacle.</p>
+</div>
+
+<!-- MISSION -->
+<section class="section">
+  <div style="max-width:800px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:60px;flex-wrap:wrap;">
+      <div class="card" style="text-align:center;padding:36px 28px;">
+        <div style="font-size:48px;margin-bottom:16px;">🎯</div>
+        <h3 style="font-size:20px;margin-bottom:10px;">Notre mission</h3>
+        <p>Rendre l'intégration administrative en France accessible à tous, quelle que soit la langue, l'origine ou le niveau d'éducation.</p>
+      </div>
+      <div class="card" style="text-align:center;padding:36px 28px;">
+        <div style="font-size:48px;margin-bottom:16px;">👁️</div>
+        <h3 style="font-size:20px;margin-bottom:10px;">Notre vision</h3>
+        <p>Un monde où aucun immigrant ne rate une aide sociale, un droit ou une opportunité par manque d'information ou de compréhension linguistique.</p>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:20px;padding:40px;color:white;margin-bottom:60px;">
+      <div style="font-size:36px;color:var(--accent);font-weight:900;line-height:1;margin-bottom:16px;">"</div>
+      <p style="font-size:18px;line-height:1.75;color:rgba(255,255,255,0.9);font-style:italic;margin-bottom:20px;">
+        Quand je suis arrivé en France, j'ai passé des semaines à chercher comment renouveler mon titre de séjour, comment m'inscrire à la CPAM, comment ouvrir un compte bancaire. Toutes ces informations existaient — mais éparpillées, en français uniquement, sans guide pratique. Boussole est la réponse à ce problème.
+      </p>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:44px;height:44px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:20px;">👤</div>
+        <div>
+          <div style="color:white;font-weight:700;font-size:15px;">L'équipe Boussole</div>
+          <div style="color:rgba(255,255,255,0.6);font-size:13px;">Immigrants & développeurs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-alt">
+  <div class="section-header center">
+    <span class="section-tag">Nos valeurs</span>
+    <h2 class="section-title">Ce qui guide <span>chacune de nos décisions</span></h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon blue">🔓</div>
+      <h3>Accessibilité totale</h3>
+      <p>Boussole est et restera gratuit. L'accès à l'information administrative est un droit, pas un privilège. Aucune fonctionnalité essentielle n'est derrière un paywall.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon orange">✅</div>
+      <h3>Fiabilité & exactitude</h3>
+      <p>Toutes les informations sont basées sur les textes officiels du gouvernement français. Nous mettons à jour les guides régulièrement pour refléter les changements législatifs.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">🌍</div>
+      <h3>Inclusion linguistique</h3>
+      <p>5 langues, et nous travaillons à en ajouter d'autres. Chaque personne mérite d'accéder aux informations dans sa langue maternelle.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon purple">🔒</div>
+      <h3>Respect de la vie privée</h3>
+      <p>Aucune donnée personnelle n'est vendue. Les informations de profil restent sur votre appareil. Nous collectons uniquement des statistiques anonymisées d'usage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+  <div class="section-header center">
+    <span class="section-tag">En chiffres</span>
+    <h2 class="section-title">Boussole <span>aujourd'hui</span></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;max-width:900px;margin:0 auto;">
+    <div style="text-align:center;background:var(--white);border-radius:var(--radius);padding:32px 20px;border:1px solid var(--border);box-shadow:var(--shadow);">
+      <div style="font-size:40px;font-weight:900;color:var(--primary);letter-spacing:-2px;">13<span style="color:var(--accent)">+</span></div>
+      <div style="font-size:14px;color:var(--text-sec);margin-top:6px;">Guides officiels</div>
+    </div>
+    <div style="text-align:center;background:var(--white);border-radius:var(--radius);padding:32px 20px;border:1px solid var(--border);box-shadow:var(--shadow);">
+      <div style="font-size:40px;font-weight:900;color:var(--primary);letter-spacing:-2px;">5</div>
+      <div style="font-size:14px;color:var(--text-sec);margin-top:6px;">Langues</div>
+    </div>
+    <div style="text-align:center;background:var(--white);border-radius:var(--radius);padding:32px 20px;border:1px solid var(--border);box-shadow:var(--shadow);">
+      <div style="font-size:40px;font-weight:900;color:var(--primary);letter-spacing:-2px;">8</div>
+      <div style="font-size:14px;color:var(--text-sec);margin-top:6px;">Catégories</div>
+    </div>
+    <div style="text-align:center;background:var(--white);border-radius:var(--radius);padding:32px 20px;border:1px solid var(--border);box-shadow:var(--shadow);">
+      <div style="font-size:40px;font-weight:900;color:var(--primary);letter-spacing:-2px;">6</div>
+      <div style="font-size:14px;color:var(--text-sec);margin-top:6px;">Profils de situation</div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTENARIAT -->
+<section class="section section-alt">
+  <div style="max-width:700px;margin:0 auto;text-align:center;">
+    <span class="section-tag">Partenariats</span>
+    <h2 class="section-title" style="text-align:center;">Travailler avec <span>les institutions</span></h2>
+    <p class="section-sub" style="margin:0 auto 36px;">Boussole est conçu pour fonctionner en complémentarité avec les mairies, préfectures et services sociaux. Nous proposons des partenariats pour distribuer l'app auprès des populations immigrées.</p>
+    <a href="contact.html" class="btn-primary" style="display:inline-flex;">📬 Proposer un partenariat</a>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Rejoignez la communauté Boussole</h2>
+  <p>Des questions ? Envie de contribuer ? Contactez-nous !</p>
+  <a href="contact.html" class="btn-primary">📬 Nous écrire</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">🧭 Boussole</div>
+      <p>Votre compas pour naviguer la bureaucratie française.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span class="footer-accent">Boussole</span>. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}</script>
+</body>
+</html>

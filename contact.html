@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Boussole</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <div class="logo-icon">🧭</div>
+    <span>Boussole</span>
+  </a>
+  <div class="navbar-links" id="navLinks">
+    <a href="index.html">Accueil</a>
+    <a href="fonctionnalites.html">Fonctionnalités</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9)">Contact</span>
+  <h1>Parlons de votre projet</h1>
+  <p>Une question, un partenariat ou une suggestion ? Notre équipe répond sous 48h.</p>
+</div>
+
+<section class="section">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div>
+        <h2 class="section-title" style="font-size:24px;">Nous sommes <span>à votre écoute</span></h2>
+        <p style="color:var(--text-sec);font-size:15px;line-height:1.7;margin-top:10px;">Que vous soyez une mairie souhaitant distribuer l'app, une association partenaire ou un utilisateur avec un retour, nous lisons tous les messages.</p>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+          <h4>Email</h4>
+          <p>contact@boussole.app</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <h4>Localisation</h4>
+          <p>La Roche-sur-Yon, Pays de la Loire, France</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">⏱️</div>
+        <div>
+          <h4>Délai de réponse</h4>
+          <p>Sous 48 heures en semaine</p>
+        </div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:16px;padding:24px;color:white;">
+        <div style="font-size:20px;margin-bottom:10px;">🤝 Partenariat institutionnel</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.65;">Vous représentez une mairie, une préfecture ou une association ? Nous proposons des présentations et une intégration dans vos dispositifs d'accueil.</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3 style="font-size:20px;font-weight:800;margin-bottom:24px;color:var(--text);">Envoyer un message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Prénom *</label>
+          <input type="text" placeholder="Jean" />
+        </div>
+        <div class="form-group">
+          <label>Nom *</label>
+          <input type="text" placeholder="Dupont" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" placeholder="jean.dupont@exemple.fr" />
+      </div>
+      <div class="form-group">
+        <label>Organisation</label>
+        <input type="text" placeholder="Mairie de... / Association... (optionnel)" />
+      </div>
+      <div class="form-group">
+        <label>Sujet *</label>
+        <select>
+          <option value="">Sélectionnez un sujet</option>
+          <option>Partenariat institutionnel</option>
+          <option>Question sur l'application</option>
+          <option>Signaler un problème</option>
+          <option>Suggestion de guide</option>
+          <option>Presse / Médias</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message *</label>
+        <textarea placeholder="Décrivez votre demande..."></textarea>
+      </div>
+      <button class="btn-form" onclick="handleSubmit(event)">Envoyer le message ✦</button>
+      <p style="font-size:11px;color:var(--text-sec);margin-top:12px;text-align:center;">Vos données sont utilisées uniquement pour répondre à votre demande.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">🧭 Boussole</div>
+      <p>Votre compas pour naviguer la bureaucratie française.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span class="footer-accent">Boussole</span>. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target;
+  btn.textContent = '✓ Message envoyé !';
+  btn.style.background = '#43a047';
+  setTimeout(() => { btn.textContent = 'Envoyer le message ✦'; btn.style.background = ''; }, 3000);
+}
+</script>
+</body>
+</html>

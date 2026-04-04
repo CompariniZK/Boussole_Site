@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boussole — Votre guide pour naviguer la France</title>
+  <meta name="description" content="Boussole aide les immigrants à naviguer la bureaucratie française avec des guides officiels, un assistant IA et un support multilingue." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <div class="logo-icon">🧭</div>
+    <span>Boussole</span>
+  </a>
+  <div class="navbar-links" id="navLinks">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="fonctionnalites.html">Fonctionnalités</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
+  </div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🧭 Application mobile gratuite</div>
+    <h1>Naviguer la France,<br /><span>sans se perdre</span></h1>
+    <p>Boussole aide les immigrants à comprendre et accomplir leurs démarches administratives en France — guides officiels, assistant IA et support en 5 langues.</p>
+    <div class="hero-btns">
+      <a href="fonctionnalites.html" class="btn-primary">✦ Découvrir l'app</a>
+      <a href="contact.html" class="btn-secondary">📬 Nous contacter</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="phone-mockup">
+      <div class="phone-screen">
+        <div class="phone-header">
+          <div class="phone-header-row">
+            <div>
+              <div class="phone-title">Bonjour 👋</div>
+              <div class="phone-sub">Que voulez-vous faire aujourd'hui ?</div>
+            </div>
+            <span style="font-size:22px">🇧🇷</span>
+          </div>
+        </div>
+        <div class="phone-body">
+          <div class="phone-card">
+            <div class="phone-card-icon" style="background:#e8eaf6">📄</div>
+            <div class="phone-card-text">
+              <div class="t1">Renouveler mon titre</div>
+              <div class="t2">5 étapes · 2–3 mois</div>
+            </div>
+          </div>
+          <div class="phone-card">
+            <div class="phone-card-icon" style="background:#e8f5e9">🏥</div>
+            <div class="phone-card-text">
+              <div class="t1">Inscription CPAM</div>
+              <div class="t2">5 étapes · 1–3 mois</div>
+            </div>
+          </div>
+          <div class="phone-card">
+            <div class="phone-card-icon" style="background:#fff8e1">🏠</div>
+            <div class="phone-card-text">
+              <div class="t1">Demander l'APL</div>
+              <div class="t2">4 étapes · 2–4 semaines</div>
+            </div>
+          </div>
+          <div class="phone-card">
+            <div class="phone-card-icon" style="background:#fce4ec">🎓</div>
+            <div class="phone-card-text">
+              <div class="t1">Campus France</div>
+              <div class="t2">5 étapes · 3–6 mois</div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-tabs">
+          <div class="phone-tab">🏠<br/>Accueil</div>
+          <div class="phone-tab active" style="color:#3949ab;font-weight:700">📖<br/>Guias</div>
+          <div class="phone-tab">💬<br/>IA Chat</div>
+          <div class="phone-tab">👤<br/>Profil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num">13<span>+</span></div>
+    <div class="stat-label">Guides officiels</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">5</div>
+    <div class="stat-label">Langues supportées</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">8</div>
+    <div class="stat-label">Catégories de démarches</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">100<span>%</span></div>
+    <div class="stat-label">Gratuit</div>
+  </div>
+</div>
+
+<!-- FEATURES OVERVIEW -->
+<section class="section">
+  <div class="section-header center">
+    <span class="section-tag">Fonctionnalités</span>
+    <h2 class="section-title">Tout ce dont vous avez besoin,<br /><span>dans une seule app</span></h2>
+    <p class="section-sub">Conçu pour les immigrants en France qui font face à une administration complexe dans une langue étrangère.</p>
+  </div>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon blue">📋</div>
+      <h3>Guides étape par étape</h3>
+      <p>13 guides officiels couvrant toutes les démarches essentielles : titre de séjour, CPAM, CAF, France Travail, permis de conduire et bien plus.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon orange">🤖</div>
+      <h3>Assistant IA intégré</h3>
+      <p>Posez vos questions en français, portugais, espagnol ou anglais. Notre assistant IA répond sur la base des textes officiels du gouvernement français.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">🌍</div>
+      <h3>5 langues disponibles</h3>
+      <p>Interface complète en français, anglais, portugais, espagnol et arabe. Changez de langue à tout moment depuis votre profil.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon purple">🛡️</div>
+      <h3>Section réfugiés</h3>
+      <p>Guides dédiés pour la demande d'asile OFPRA, le logement en CADA et l'allocation ADA — avec un accompagnement spécialisé.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon blue">🎓</div>
+      <h3>Éducation & études</h3>
+      <p>De l'inscription scolaire des enfants à Campus France et la bourse CROUS — tout pour les familles et les étudiants étrangers.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon orange">👨‍👩‍👧</div>
+      <h3>Aides familiales CAF</h3>
+      <p>Allocations familiales, PAJE, complément familial — un guide complet sur les aides financières disponibles pour les familles avec enfants.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt">
+  <div class="section-header center">
+    <span class="section-tag">Comment ça marche</span>
+    <h2 class="section-title">Simple, rapide, <span>efficace</span></h2>
+    <p class="section-sub">En 3 étapes, accédez à toutes les informations dont vous avez besoin pour réussir vos démarches.</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Créez votre profil</h3>
+      <p>Indiquez votre nationalité et votre situation (résident, étudiant, travailleur, famille...) pour obtenir des guides personnalisés.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Choisissez un guide</h3>
+      <p>Parcourez les 13 guides organisés par catégorie ou filtrez selon votre situation. Chaque guide inclut les documents nécessaires.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Accomplissez vos démarches</h3>
+      <p>Suivez les étapes, consultez les liens officiels et posez vos questions à l'assistant IA en cas de doute.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section class="section">
+  <div style="display:flex; gap:60px; align-items:center; flex-wrap:wrap;">
+    <div style="flex:1; min-width:280px;">
+      <span class="section-tag">Multilingue</span>
+      <h2 class="section-title">Une app pour <span>toutes les nationalités</span></h2>
+      <p class="section-sub">Boussole a été conçu pour être accessible à tous, quelle que soit votre langue maternelle. L'interface s'adapte instantanément à votre langue préférée.</p>
+      <div class="lang-row">
+        <div class="lang-chip"><span>🇫🇷</span> Français</div>
+        <div class="lang-chip"><span>🇬🇧</span> English</div>
+        <div class="lang-chip"><span>🇧🇷</span> Português</div>
+        <div class="lang-chip"><span>🇪🇸</span> Español</div>
+        <div class="lang-chip"><span>🇸🇦</span> العربية</div>
+      </div>
+    </div>
+    <div style="flex:1; min-width:280px; background:linear-gradient(135deg,var(--primary),var(--primary-light)); border-radius:24px; padding:36px; box-shadow:var(--shadow);">
+      <div style="color:rgba(255,255,255,0.6); font-size:13px; font-weight:600; margin-bottom:16px; text-transform:uppercase; letter-spacing:0.5px;">🤖 Assistant IA — Exemple</div>
+      <div style="background:rgba(255,255,255,0.1); border-radius:12px; padding:14px; margin-bottom:10px;">
+        <div style="color:rgba(255,255,255,0.6); font-size:11px; margin-bottom:6px;">Vous</div>
+        <div style="color:white; font-size:14px;">Como renovar meu título de residência?</div>
+      </div>
+      <div style="background:rgba(245,166,35,0.15); border:1px solid rgba(245,166,35,0.3); border-radius:12px; padding:14px;">
+        <div style="color:var(--accent); font-size:11px; margin-bottom:6px;">🧭 Boussole IA</div>
+        <div style="color:white; font-size:13px; line-height:1.6;">Para renovar seu título de residência, você deve iniciar o processo pelo portal ANEF com pelo menos 2 meses de antecedência...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Prêt à simplifier vos démarches ?</h2>
+  <p>Téléchargez Boussole gratuitement et commencez à naviguer la bureaucratie française en toute confiance.</p>
+  <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+    <a href="contact.html" class="btn-primary">📬 Contacter l'équipe</a>
+    <a href="fonctionnalites.html" class="btn-secondary">Voir toutes les fonctionnalités →</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">🧭 Boussole</div>
+      <p>Votre compas pour naviguer la bureaucratie française. Gratuit, multilingue, officiel.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Guides</h4>
+      <ul>
+        <li><a href="fonctionnalites.html">Titre de séjour</a></li>
+        <li><a href="fonctionnalites.html">CPAM & Santé</a></li>
+        <li><a href="fonctionnalites.html">CAF & Logement</a></li>
+        <li><a href="fonctionnalites.html">Asile & Réfugiés</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@boussole.app">contact@boussole.app</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+        <li><a href="admin/index.html">Espace administration</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span class="footer-accent">Boussole</span>. Tous droits réservés.</p>
+    <p>Fait avec ❤️ pour les immigrants en France</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+</script>
+</body>
+</html>
