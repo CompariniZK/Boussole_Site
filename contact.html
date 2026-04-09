@@ -14,15 +14,15 @@
     <div class="logo-icon">🧭</div>
     <span>Boussole</span>
   </a>
-  <div class="navbar-links" id="navLinks">
-    <a href="index.html">Accueil</a>
-    <a href="fonctionnalites.html">Fonctionnalités</a>
-    <a href="a-propos.html">À propos</a>
-    <a href="contact.html" class="active">Contact</a>
-    <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
-  </div>
-  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
+<div class="navbar-links" id="navLinks">
+  <a href="index.html">Accueil</a>
+  <a href="fonctionnalites.html">Fonctionnalités</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
+</div>
 
 <div class="page-hero">
   <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9)">Contact</span>
@@ -132,7 +132,16 @@
 </footer>
 
 <script>
-function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('active');
+}
+document.querySelectorAll('.navbar-links a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('active');
+  });
+});
 function handleSubmit(e) {
   e.preventDefault();
   const btn = e.target;
