@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — Boussole</title>
+  <meta name="description" content="Politique de confidentialité de l'application Boussole. Conformité RGPD, données hébergées en Union Européenne." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+  <style>
+    /* Legal page styles */
+    .legal-hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 60%, #1565c0 100%);
+      padding: 120px 5% 60px;
+      color: var(--white);
+      text-align: center;
+    }
+    .legal-hero h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 12px; }
+    .legal-hero .subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.85); max-width: 700px; margin: 0 auto; }
+    .legal-hero .meta { margin-top: 18px; font-size: 0.9rem; color: rgba(255,255,255,0.65); }
+    .legal-hero .badge {
+      display: inline-block; background: rgba(245,166,35,0.18);
+      color: var(--accent); padding: 6px 14px; border-radius: 20px;
+      font-size: 0.85rem; font-weight: 600; margin-bottom: 16px;
+    }
+
+    .legal-container {
+      max-width: 900px; margin: -30px auto 60px;
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 50px 50px;
+      position: relative; z-index: 2;
+    }
+    .legal-container h2 {
+      font-size: 1.45rem; color: var(--primary);
+      margin: 32px 0 12px; padding-top: 10px;
+      border-top: 2px solid var(--border);
+    }
+    .legal-container h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+    .legal-container h3 { font-size: 1.05rem; color: var(--primary-mid); margin: 18px 0 8px; }
+    .legal-container p { color: var(--text); margin-bottom: 12px; line-height: 1.7; }
+    .legal-container ul, .legal-container ol { margin: 8px 0 16px 22px; }
+    .legal-container li { color: var(--text); line-height: 1.7; margin-bottom: 6px; }
+    .legal-container strong { color: var(--primary); }
+    .legal-container a { color: var(--primary-light); text-decoration: underline; }
+    .legal-container a:hover { color: var(--primary); }
+    .legal-container table {
+      width: 100%; border-collapse: collapse; margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    .legal-container th, .legal-container td {
+      text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border);
+    }
+    .legal-container th { background: var(--bg); color: var(--primary); font-weight: 700; }
+    .legal-callout {
+      background: rgba(245,166,35,0.10);
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px; border-radius: 8px; margin: 18px 0;
+    }
+    .legal-callout p:last-child { margin-bottom: 0; }
+    .toc {
+      background: var(--bg); border-radius: 10px; padding: 18px 22px; margin-bottom: 24px;
+    }
+    .toc h3 { margin-top: 0; color: var(--primary); font-size: 1rem; }
+    .toc ol { margin-left: 18px; margin-bottom: 0; }
+    .toc a { color: var(--primary-light); }
+
+    @media (max-width: 768px) {
+      .legal-hero h1 { font-size: 1.8rem; }
+      .legal-container { padding: 30px 22px; margin: -20px 16px 40px; }
+      .legal-container h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <div class="logo-icon">🧭</div>
+    <span>Boussole</span>
+  </a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="navbar-links" id="navLinks">
+  <a href="index.html">Accueil</a>
+  <a href="fonctionnalites.html">Fonctionnalités</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="contact.html">Contact</a>
+  <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
+</div>
+
+<!-- HERO -->
+<section class="legal-hero">
+  <div class="badge">🔒 Conformité RGPD</div>
+  <h1>Politique de confidentialité</h1>
+  <p class="subtitle">Comment nous collectons, utilisons et protégeons vos données personnelles dans l'application Boussole.</p>
+  <p class="meta">Dernière mise à jour : 13 juin 2026 · Version 1.0</p>
+</section>
+
+<!-- CONTENT -->
+<main class="legal-container">
+
+  <div class="toc">
+    <h3>Sommaire</h3>
+    <ol>
+      <li><a href="#identite">Identité du responsable du traitement</a></li>
+      <li><a href="#donnees">Données collectées</a></li>
+      <li><a href="#finalites">Finalités et bases légales</a></li>
+      <li><a href="#destinataires">Destinataires et sous-traitants</a></li>
+      <li><a href="#transferts">Transferts hors Union Européenne</a></li>
+      <li><a href="#duree">Durée de conservation</a></li>
+      <li><a href="#droits">Vos droits RGPD</a></li>
+      <li><a href="#securite">Sécurité des données</a></li>
+      <li><a href="#mineurs">Protection des mineurs</a></li>
+      <li><a href="#modifications">Modifications de cette politique</a></li>
+      <li><a href="#contact">Contact et réclamations</a></li>
+    </ol>
+  </div>
+
+  <p>Boussole est une application mobile gratuite destinée à aider les immigrants en France à naviguer dans leurs démarches administratives. La protection de vos données personnelles est au cœur de notre démarche. Cette politique de confidentialité, conforme au <strong>Règlement Général sur la Protection des Données (RGPD — Règlement UE 2016/679)</strong> et à la <strong>loi française Informatique et Libertés</strong>, explique de manière transparente comment nous traitons vos données.</p>
+
+  <div class="legal-callout">
+    <p><strong>En résumé :</strong> Boussole collecte uniquement les données strictement nécessaires à son fonctionnement, les héberge en Union Européenne (Allemagne, Francfort), ne les vend jamais, et vous donne un contrôle total sur leur suppression à tout moment.</p>
+  </div>
+
+  <h2 id="identite">1. Identité du responsable du traitement</h2>
+  <p>Le responsable du traitement des données collectées via l'application Boussole est :</p>
+  <ul>
+    <li><strong>Nom :</strong> Gabriel Comparini</li>
+    <li><strong>Rôle :</strong> Éditeur et développeur de l'application Boussole</li>
+    <li><strong>Adresse e-mail de contact :</strong> <a href="mailto:contact@boussole.app">contact@boussole.app</a></li>
+    <li><strong>Site web :</strong> <a href="https://boussole.it.com">boussole.it.com</a></li>
+  </ul>
+  <p>Pour toute question relative à la protection de vos données personnelles, vous pouvez nous contacter directement par e-mail.</p>
+
+  <h2 id="donnees">2. Données collectées</h2>
+  <p>Nous collectons uniquement les données nécessaires au fonctionnement de l'application. Aucune donnée n'est collectée sans votre consentement actif (création de compte).</p>
+
+  <h3>2.1 Données fournies par l'utilisateur</h3>
+  <table>
+    <tr>
+      <th>Donnée</th>
+      <th>Finalité</th>
+      <th>Obligatoire ?</th>
+    </tr>
+    <tr>
+      <td>Adresse e-mail</td>
+      <td>Création et authentification du compte</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Mot de passe</td>
+      <td>Sécurisation du compte (stocké sous forme de <em>hash bcrypt</em>, jamais en clair)</td>
+      <td>Oui</td>
+    </tr>
+    <tr>
+      <td>Nationalité (code pays ISO)</td>
+      <td>Personnalisation des guides administratifs</td>
+      <td>Optionnel</td>
+    </tr>
+    <tr>
+      <td>Situation administrative (étudiant, salarié, demandeur d'asile, etc.)</td>
+      <td>Affichage des guides pertinents pour votre situation</td>
+      <td>Optionnel</td>
+    </tr>
+    <tr>
+      <td>Ville/commune de résidence</td>
+      <td>Affichage des ressources locales (préfecture, CCAS, associations)</td>
+      <td>Optionnel</td>
+    </tr>
+    <tr>
+      <td>Langue préférée</td>
+      <td>Affichage de l'interface dans votre langue (français, anglais, portugais, espagnol, arabe)</td>
+      <td>Optionnel</td>
+    </tr>
+  </table>
+
+  <h3>2.2 Données générées par votre utilisation</h3>
+  <ul>
+    <li><strong>Messages échangés avec l'assistant IA</strong> — Vos questions et les réponses fournies par l'assistant juridique sont transmises aux fournisseurs d'IA pour traitement (voir section 4).</li>
+    <li><strong>Guides marqués comme complétés ou favoris</strong> — Pour suivre votre progression dans les démarches.</li>
+    <li><strong>Date de création du compte et date de dernière mise à jour du profil</strong>.</li>
+  </ul>
+
+  <h3>2.3 Données techniques</h3>
+  <ul>
+    <li><strong>Adresse IP</strong> — Collectée temporairement par notre serveur backend pour la sécurité (limitation du nombre de requêtes, prévention des abus). Non stockée durablement.</li>
+    <li><strong>Identifiant de session</strong> — Jeton JWT chiffré stocké de manière sécurisée sur votre appareil (<em>Keychain</em> iOS / <em>Keystore</em> Android, chiffrement matériel).</li>
+  </ul>
+
+  <div class="legal-callout">
+    <p><strong>Ce que nous ne collectons JAMAIS :</strong> votre nom complet, votre date de naissance, votre numéro de titre de séjour, votre numéro de sécurité sociale, votre adresse postale précise, vos contacts, vos photos, votre localisation GPS, vos données bancaires.</p>
+  </div>
+
+  <h2 id="finalites">3. Finalités et bases légales du traitement</h2>
+  <table>
+    <tr>
+      <th>Finalité</th>
+      <th>Base légale (RGPD Art. 6)</th>
+    </tr>
+    <tr>
+      <td>Création et gestion de votre compte utilisateur</td>
+      <td>Exécution du contrat de service (Art. 6.1.b)</td>
+    </tr>
+    <tr>
+      <td>Personnalisation des guides selon votre profil</td>
+      <td>Consentement (Art. 6.1.a)</td>
+    </tr>
+    <tr>
+      <td>Réponses de l'assistant IA</td>
+      <td>Exécution du contrat de service (Art. 6.1.b)</td>
+    </tr>
+    <tr>
+      <td>Sécurité (limitation de débit, prévention des abus)</td>
+      <td>Intérêt légitime (Art. 6.1.f)</td>
+    </tr>
+    <tr>
+      <td>Communication relative au service (e-mail de confirmation, réinitialisation de mot de passe)</td>
+      <td>Exécution du contrat de service (Art. 6.1.b)</td>
+    </tr>
+  </table>
+  <p>Nous n'utilisons <strong>jamais</strong> vos données à des fins publicitaires, de profilage commercial ou de revente à des tiers.</p>
+
+  <h2 id="destinataires">4. Destinataires et sous-traitants</h2>
+  <p>Vos données ne sont accessibles qu'à des sous-traitants techniques strictement nécessaires au fonctionnement du service, sélectionnés pour leur niveau de sécurité élevé :</p>
+
+  <table>
+    <tr>
+      <th>Sous-traitant</th>
+      <th>Rôle</th>
+      <th>Hébergement</th>
+    </tr>
+    <tr>
+      <td><strong>Supabase</strong> (Supabase Inc.)</td>
+      <td>Authentification, base de données PostgreSQL, gestion des profils</td>
+      <td>🇩🇪 Allemagne, Francfort (UE)</td>
+    </tr>
+    <tr>
+      <td><strong>Railway</strong> (Railway Corp.)</td>
+      <td>Hébergement du serveur backend (API)</td>
+      <td>🇺🇸 États-Unis (voir section 5)</td>
+    </tr>
+    <tr>
+      <td><strong>Groq</strong> (Groq Inc.)</td>
+      <td>Moteur d'intelligence artificielle (Llama 3.3)</td>
+      <td>🇺🇸 États-Unis (voir section 5)</td>
+    </tr>
+    <tr>
+      <td><strong>Anthropic</strong> (Anthropic PBC)</td>
+      <td>Moteur d'intelligence artificielle (Claude) — pour certaines fonctionnalités avancées</td>
+      <td>🇺🇸 États-Unis (voir section 5)</td>
+    </tr>
+  </table>
+
+  <p>Chacun de ces sous-traitants est lié par des engagements contractuels conformes à l'article 28 du RGPD. Aucun d'entre eux n'utilise vos données à d'autres fins que la fourniture du service.</p>
+
+  <h2 id="transferts">5. Transferts hors Union Européenne</h2>
+  <p>Certains de nos sous-traitants (Railway, Groq, Anthropic) sont basés aux États-Unis. Conformément aux articles 44 à 49 du RGPD, ces transferts sont encadrés par :</p>
+  <ul>
+    <li>Les <strong>Clauses Contractuelles Types (CCT)</strong> approuvées par la Commission européenne ;</li>
+    <li>Le <strong>Data Privacy Framework UE–États-Unis</strong> lorsque le sous-traitant y adhère ;</li>
+    <li>Des mesures de sécurité techniques renforcées (chiffrement en transit TLS 1.3, anonymisation des contextes).</li>
+  </ul>
+  <p>Les messages que vous envoyez à l'assistant IA peuvent contenir des informations sur votre situation personnelle. Nous vous recommandons de ne pas y inclure d'informations directement identifiantes (nom complet, numéros de titre, etc.).</p>
+
+  <h2 id="duree">6. Durée de conservation</h2>
+  <table>
+    <tr>
+      <th>Donnée</th>
+      <th>Durée</th>
+    </tr>
+    <tr>
+      <td>Compte utilisateur (e-mail, profil)</td>
+      <td>Jusqu'à la suppression de votre compte par vos soins, ou après 36 mois d'inactivité</td>
+    </tr>
+    <tr>
+      <td>Messages échangés avec l'IA</td>
+      <td>Conservés sur votre appareil uniquement ; non stockés par défaut sur nos serveurs</td>
+    </tr>
+    <tr>
+      <td>Journaux techniques (adresses IP, requêtes)</td>
+      <td>30 jours maximum, à des fins de sécurité</td>
+    </tr>
+    <tr>
+      <td>Données après suppression du compte</td>
+      <td>Effacées définitivement sous 30 jours (sauf obligations légales)</td>
+    </tr>
+  </table>
+
+  <h2 id="droits">7. Vos droits RGPD</h2>
+  <p>Conformément aux articles 15 à 22 du RGPD, vous disposez à tout moment des droits suivants :</p>
+  <ul>
+    <li><strong>Droit d'accès</strong> (Art. 15) — Obtenir une copie des données vous concernant.</li>
+    <li><strong>Droit de rectification</strong> (Art. 16) — Corriger des données inexactes ou incomplètes.</li>
+    <li><strong>Droit à l'effacement / "droit à l'oubli"</strong> (Art. 17) — Supprimer votre compte et toutes les données associées.</li>
+    <li><strong>Droit à la limitation</strong> (Art. 18) — Demander la suspension temporaire du traitement.</li>
+    <li><strong>Droit à la portabilité</strong> (Art. 20) — Recevoir vos données dans un format structuré et lisible.</li>
+    <li><strong>Droit d'opposition</strong> (Art. 21) — Vous opposer au traitement de vos données.</li>
+    <li><strong>Droit de retirer votre consentement</strong> à tout moment, lorsque le traitement repose sur celui-ci.</li>
+  </ul>
+  <p>Pour exercer l'un de ces droits, envoyez-nous un e-mail à <a href="mailto:contact@boussole.app">contact@boussole.app</a> depuis l'adresse e-mail associée à votre compte. Nous vous répondrons sous <strong>30 jours maximum</strong>, conformément à l'article 12 du RGPD.</p>
+
+  <div class="legal-callout">
+    <p><strong>Suppression de votre compte :</strong> Vous pouvez supprimer votre compte directement depuis l'application (Paramètres → Compte → Supprimer mon compte) ou en nous contactant par e-mail. La suppression est définitive et entraîne l'effacement irréversible de toutes vos données sous 30 jours.</p>
+  </div>
+
+  <h2 id="securite">8. Sécurité des données</h2>
+  <p>Nous mettons en œuvre des mesures techniques et organisationnelles pour garantir la sécurité de vos données :</p>
+  <ul>
+    <li><strong>Chiffrement en transit</strong> (TLS 1.3) sur toutes les communications réseau ;</li>
+    <li><strong>Chiffrement au repos</strong> (AES-256) sur les bases de données ;</li>
+    <li><strong>Mots de passe hachés</strong> avec l'algorithme <em>bcrypt</em> (jamais stockés en clair) ;</li>
+    <li><strong>Vérification anti-fuite</strong> des mots de passe lors de l'inscription (base HaveIBeenPwned) ;</li>
+    <li><strong>Stockage sécurisé local</strong> des jetons de session via le Keychain (iOS) ou Keystore (Android), avec chiffrement matériel ;</li>
+    <li><strong>Row-Level Security (RLS)</strong> sur la base de données : aucun utilisateur ne peut accéder aux données d'un autre, y compris en cas de bug applicatif ;</li>
+    <li><strong>Authentification à deux facteurs</strong> disponible sur demande ;</li>
+    <li><strong>Sauvegardes automatiques quotidiennes</strong> chez notre hébergeur Supabase ;</li>
+    <li><strong>Audits de sécurité réguliers</strong> et mises à jour des dépendances logicielles.</li>
+  </ul>
+
+  <h2 id="mineurs">9. Protection des mineurs</h2>
+  <p>L'application Boussole est destinée aux personnes majeures (18 ans et plus). Nous ne collectons pas sciemment de données personnelles concernant des mineurs. Si vous êtes parent ou tuteur et que vous avez connaissance que votre enfant nous a fourni des données personnelles sans votre consentement, contactez-nous : nous procéderons à la suppression dans les plus brefs délais.</p>
+
+  <h2 id="modifications">10. Modifications de cette politique</h2>
+  <p>Nous pouvons être amenés à modifier cette politique de confidentialité pour refléter des évolutions techniques, légales ou fonctionnelles. La date de la dernière mise à jour est indiquée en haut de cette page.</p>
+  <p>Toute modification substantielle vous sera notifiée par e-mail (à l'adresse associée à votre compte) ou directement dans l'application au moins <strong>30 jours</strong> avant son entrée en vigueur.</p>
+
+  <h2 id="contact">11. Contact et réclamations</h2>
+  <p>Pour toute question relative à cette politique ou à vos données personnelles :</p>
+  <ul>
+    <li>📬 <strong>E-mail :</strong> <a href="mailto:contact@boussole.app">contact@boussole.app</a></li>
+    <li>🌐 <strong>Formulaire :</strong> <a href="contact.html">Page Contact</a></li>
+  </ul>
+
+  <p>Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous avez le droit d'introduire une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong>, autorité de contrôle française compétente en matière de protection des données :</p>
+  <ul>
+    <li>🌐 <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">cnil.fr/fr/plaintes</a></li>
+    <li>📞 +33 1 53 73 22 22</li>
+    <li>📬 3 Place de Fontenoy — TSA 80715 — 75334 PARIS CEDEX 07</li>
+  </ul>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-icon">🧭</div>
+        <span>Boussole</span>
+      </div>
+      <p>Votre compas pour naviguer la bureaucratie française. Gratuit, multilingue, officiel.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@boussole.app">contact@boussole.app</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span class="footer-accent">Boussole</span>. Tous droits réservés.</p>
+    <p>Fait avec ❤️ pour les immigrants en France</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('active');
+}
+document.querySelectorAll('.navbar-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>

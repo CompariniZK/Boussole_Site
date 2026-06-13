@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales — Boussole</title>
+  <meta name="description" content="Mentions légales de l'application et du site Boussole — éditeur, hébergeur, propriété intellectuelle." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 60%, #1565c0 100%);
+      padding: 120px 5% 60px;
+      color: var(--white);
+      text-align: center;
+    }
+    .legal-hero h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 12px; }
+    .legal-hero .subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.85); max-width: 700px; margin: 0 auto; }
+    .legal-hero .meta { margin-top: 18px; font-size: 0.9rem; color: rgba(255,255,255,0.65); }
+    .legal-hero .badge {
+      display: inline-block; background: rgba(245,166,35,0.18);
+      color: var(--accent); padding: 6px 14px; border-radius: 20px;
+      font-size: 0.85rem; font-weight: 600; margin-bottom: 16px;
+    }
+
+    .legal-container {
+      max-width: 900px; margin: -30px auto 60px;
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 50px 50px;
+      position: relative; z-index: 2;
+    }
+    .legal-container h2 {
+      font-size: 1.45rem; color: var(--primary);
+      margin: 32px 0 12px; padding-top: 10px;
+      border-top: 2px solid var(--border);
+    }
+    .legal-container h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+    .legal-container h3 { font-size: 1.05rem; color: var(--primary-mid); margin: 18px 0 8px; }
+    .legal-container p { color: var(--text); margin-bottom: 12px; line-height: 1.7; }
+    .legal-container ul { margin: 8px 0 16px 22px; }
+    .legal-container li { color: var(--text); line-height: 1.7; margin-bottom: 6px; }
+    .legal-container strong { color: var(--primary); }
+    .legal-container a { color: var(--primary-light); text-decoration: underline; }
+    .legal-container a:hover { color: var(--primary); }
+
+    .info-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px; margin: 18px 0;
+    }
+    .info-card {
+      background: var(--bg); border-radius: 10px; padding: 18px;
+      border-left: 4px solid var(--accent);
+    }
+    .info-card h4 {
+      margin: 0 0 8px; color: var(--primary); font-size: 1rem;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .info-card p { margin: 0; font-size: 0.95rem; }
+
+    @media (max-width: 768px) {
+      .legal-hero h1 { font-size: 1.8rem; }
+      .legal-container { padding: 30px 22px; margin: -20px 16px 40px; }
+      .legal-container h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="navbar-logo">
+    <div class="logo-icon">🧭</div>
+    <span>Boussole</span>
+  </a>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="navbar-links" id="navLinks">
+  <a href="index.html">Accueil</a>
+  <a href="fonctionnalites.html">Fonctionnalités</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="contact.html">Contact</a>
+  <a href="admin/index.html" class="navbar-cta">Espace Admin</a>
+</div>
+
+<!-- HERO -->
+<section class="legal-hero">
+  <div class="badge">⚖️ Informations légales</div>
+  <h1>Mentions légales</h1>
+  <p class="subtitle">Informations obligatoires conformément à la loi française pour la confiance dans l'économie numérique (LCEN).</p>
+  <p class="meta">Dernière mise à jour : 13 juin 2026</p>
+</section>
+
+<!-- CONTENT -->
+<main class="legal-container">
+
+  <h2>1. Éditeur du site et de l'application</h2>
+  <p>Le site web <strong>boussole.it.com</strong> et l'application mobile <strong>Boussole</strong> sont édités par :</p>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h4>👤 Éditeur</h4>
+      <p>Gabriel Comparini<br />Éditeur individuel</p>
+    </div>
+    <div class="info-card">
+      <h4>📬 Contact</h4>
+      <p><a href="mailto:contact@boussole.app">contact@boussole.app</a></p>
+    </div>
+    <div class="info-card">
+      <h4>🌐 Site web</h4>
+      <p><a href="https://boussole.it.com">boussole.it.com</a></p>
+    </div>
+    <div class="info-card">
+      <h4>📱 Application</h4>
+      <p>Boussole (Android &amp; iOS)<br />Publiée sur Google Play Store et App Store</p>
+    </div>
+  </div>
+
+  <p>Le directeur de la publication est Gabriel Comparini, en sa qualité d'éditeur.</p>
+
+  <h2>2. Hébergement</h2>
+  <h3>2.1 Hébergement du site web</h3>
+  <p>Le site web boussole.it.com est hébergé par un prestataire d'hébergement professionnel. Pour toute demande relative à l'hébergement, contactez l'éditeur à l'adresse indiquée ci-dessus.</p>
+
+  <h3>2.2 Hébergement du backend de l'application</h3>
+  <p>Le serveur API de l'application est hébergé par :</p>
+  <ul>
+    <li><strong>Railway Corporation</strong> — 1111B S Governors Ave STE 6013, Dover, DE 19904, États-Unis</li>
+    <li>Site web : <a href="https://railway.com" target="_blank" rel="noopener">railway.com</a></li>
+  </ul>
+
+  <h3>2.3 Hébergement des données utilisateurs</h3>
+  <p>Les données utilisateurs (authentification, profils) sont hébergées en Union Européenne par :</p>
+  <ul>
+    <li><strong>Supabase Inc.</strong> — 970 Toa Payoh North #07-04, Singapour 318992</li>
+    <li>Région de stockage : <strong>🇩🇪 Allemagne, Francfort (eu-central-1)</strong></li>
+    <li>Site web : <a href="https://supabase.com" target="_blank" rel="noopener">supabase.com</a></li>
+  </ul>
+
+  <h2>3. Propriété intellectuelle</h2>
+  <p>L'ensemble des éléments du site web boussole.it.com et de l'application Boussole — incluant notamment les textes, graphismes, logos, icônes, sons, vidéos, et leur mise en forme — sont la propriété exclusive de l'éditeur ou de ses partenaires, et sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle (Code de la propriété intellectuelle).</p>
+
+  <p>Toute reproduction, représentation, modification, publication, transmission, ou dénaturation, totale ou partielle, du site ou de l'application, par quelque procédé que ce soit, et sur quelque support que ce soit, est <strong>interdite sans autorisation préalable écrite</strong> de l'éditeur.</p>
+
+  <p>Les marques, logos, sigles et noms de domaine cités sur le site appartiennent à leurs propriétaires respectifs (notamment : République Française, services publics français, partenaires techniques tels que Supabase, Groq, Anthropic).</p>
+
+  <h2>4. Crédits et sources officielles</h2>
+  <p>Les informations administratives présentées dans l'application Boussole sont issues de sources officielles publiquement accessibles, notamment :</p>
+  <ul>
+    <li><a href="https://www.service-public.fr" target="_blank" rel="noopener">service-public.fr</a> — Portail officiel de l'administration française</li>
+    <li><a href="https://www.legifrance.gouv.fr" target="_blank" rel="noopener">legifrance.gouv.fr</a> — Service public de la diffusion du droit</li>
+    <li><a href="https://administration-etrangers-en-france.interieur.gouv.fr" target="_blank" rel="noopener">administration-etrangers-en-france.interieur.gouv.fr</a> — ANEF</li>
+    <li><a href="https://www.ameli.fr" target="_blank" rel="noopener">ameli.fr</a> — Assurance Maladie</li>
+    <li><a href="https://www.caf.fr" target="_blank" rel="noopener">caf.fr</a> — Caisse d'Allocations Familiales</li>
+    <li><a href="https://www.francetravail.fr" target="_blank" rel="noopener">francetravail.fr</a> — France Travail</li>
+    <li><a href="https://www.ofpra.gouv.fr" target="_blank" rel="noopener">ofpra.gouv.fr</a> — Office français de protection des réfugiés et apatrides</li>
+  </ul>
+
+  <h2>5. Limitation de responsabilité</h2>
+  <p>L'application Boussole fournit des informations à <strong>caractère informatif</strong> sur les démarches administratives en France. Ces informations ne se substituent en aucun cas à un conseil juridique professionnel.</p>
+
+  <p>Malgré tout le soin apporté à la rédaction et à la mise à jour des contenus, l'éditeur ne peut garantir l'exactitude, l'exhaustivité ou l'actualité des informations diffusées. Les démarches administratives évoluent régulièrement : il appartient à chaque utilisateur de vérifier les informations sur les sources officielles avant toute démarche.</p>
+
+  <p>L'assistant IA intégré à l'application fournit des réponses générées automatiquement. Ces réponses peuvent contenir des erreurs ou imprécisions et ne constituent pas un conseil juridique. En cas de doute, l'utilisateur est invité à consulter la préfecture compétente, un avocat ou une association d'aide aux étrangers (par exemple : Cimade, France Terre d'Asile, GISTI).</p>
+
+  <p>L'éditeur ne pourra être tenu responsable des dommages directs ou indirects résultant de l'utilisation des informations fournies par l'application.</p>
+
+  <h2>6. Liens hypertextes</h2>
+  <p>L'application et le site contiennent des liens hypertextes vers des sites tiers (services publics, partenaires, etc.). L'éditeur n'exerce aucun contrôle sur ces sites et ne saurait être tenu responsable de leur contenu ou de leur fonctionnement.</p>
+
+  <h2>7. Données personnelles</h2>
+  <p>Le traitement de vos données personnelles est détaillé dans notre <a href="politique-confidentialite.html">Politique de confidentialité</a>, conforme au Règlement Général sur la Protection des Données (RGPD).</p>
+
+  <h2>8. Droit applicable et juridiction compétente</h2>
+  <p>Les présentes mentions légales sont régies par le <strong>droit français</strong>. En cas de litige, et après tentative de résolution amiable, les tribunaux français seront seuls compétents.</p>
+
+  <h2>9. Contact</h2>
+  <p>Pour toute question relative aux présentes mentions légales :</p>
+  <ul>
+    <li>📬 <strong>E-mail :</strong> <a href="mailto:contact@boussole.app">contact@boussole.app</a></li>
+    <li>🌐 <strong>Formulaire :</strong> <a href="contact.html">Page Contact</a></li>
+  </ul>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-icon">🧭</div>
+        <span>Boussole</span>
+      </div>
+      <p>Votre compas pour naviguer la bureaucratie française. Gratuit, multilingue, officiel.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@boussole.app">contact@boussole.app</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <span class="footer-accent">Boussole</span>. Tous droits réservés.</p>
+    <p>Fait avec ❤️ pour les immigrants en France</p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('active');
+}
+document.querySelectorAll('.navbar-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
