@@ -26,7 +26,7 @@
   // Suivi du tunnel : tout clic vers l'application (boutons « S'abonner ») est
   // envoyé comme un événement de conversion, pour mesurer le taux visite→essai.
   document.addEventListener('click', function (e) {
-    var a = e.target && e.target.closest && e.target.closest('a[href*="boussole-web.netlify.app"]');
+    var a = e.target && e.target.closest && e.target.closest('a[href*="boussole-app.vercel.app"]');
     if (!a) return;
     if (enabled && window.gtag) {
       window.gtag('event', 'subscribe_click', {
