@@ -16,9 +16,11 @@
 // ============================================================================
 (function () {
   var GA_ID = 'G-XXXXXXXXXX';   // ← votre identifiant GA4
-  var META_PIXEL_ID = '';       // ← votre identifiant de pixel Meta
+  var META_PIXEL_ID = '1814306636576336';
 
-  var gaOn = /^G-[A-Z0-9]{6,}$/.test(GA_ID);
+  // Le gabarit 'G-XXXXXXXXXX' passait la regex (X est une lettre majuscule),
+  // donc GA4 se chargeait avec un identifiant bidon. Exclure le gabarit.
+  var gaOn = GA_ID !== 'G-XXXXXXXXXX' && /^G-[A-Z0-9]{6,}$/.test(GA_ID);
   var metaOn = /^[0-9]{10,20}$/.test(META_PIXEL_ID);
 
   // ── Google Analytics 4 ────────────────────────────────────────────────────
